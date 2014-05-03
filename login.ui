@@ -23,7 +23,7 @@
    <iconset>
     <normaloff>res/icon.png</normaloff>res/icon.png</iconset>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -45,7 +45,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -74,7 +74,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -89,6 +89,9 @@
       <property name="text">
        <string>登录</string>
       </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
      </widget>
     </item>
     <item>
@@ -100,14 +103,13 @@
     </item>
    </layout>
   </widget>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>userNameTx</zorder>
-  <zorder>passWordTx</zorder>
-  <zorder>passWordTx</zorder>
-  <zorder>okBtn</zorder>
-  <zorder>resetBtn</zorder>
  </widget>
+ <tabstops>
+  <tabstop>okBtn</tabstop>
+  <tabstop>resetBtn</tabstop>
+  <tabstop>userNameTx</tabstop>
+  <tabstop>passWordTx</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
