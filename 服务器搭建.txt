@@ -1,0 +1,41 @@
+1、apt 相关的命令（跟苹果的cydia类似）
+源文件管理在/etc/apt/source.list 中
+
+用法
+1、apt-get update 更新整个源文件（进入cydia）
+2、sudo apt-cache search [包名字]             搜索包 可以和grep连用
+3、sudo apt-get install [包命]           安装包
+
+
+
+ldd用于查看文件需要哪些库
+ldd engine | grep no 
+查看缺少的库或者程序，使用apt进行安装
+
+安装mongodb
+sudo apt-get install mongodb 
+
+将文件考到芒果文件下
+mnt/hgfs/ddt/config/mongodb.conf
+
+启动服务器时 可能出现
+apt-get install curl
+
+
+
+
+
+安装Mysql 
+http://blog.csdn.net/deutschester/article/details/6738837
+
+
+装lighttpd(用于显示服务器列表)
+
+在cd /etc/lighttpd
+目录中有个lighttpd.conf文件，
+server.dir-listing          = "enable"
+改为disable ，代表只能通过网页访问，无法访问源文件
+
+
+403 - Forbidden
+http://el.web.id/how-to-solve-lighttpd-php-403-forbidden-in-ubuntu-196
